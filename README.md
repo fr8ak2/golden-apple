@@ -79,7 +79,7 @@ To get started with Tasks Application, follow these steps:
 
 ## :whale: Using Docker Compose
 
-To set up PostgreSQL Docker Compose, follow these steps:
+To set up PostgresSQL Docker Compose, follow these steps:
 
 1. Ensure Docker and Docker Compose are installed on your machine.
 2. Running required services with docker-compose:
@@ -90,6 +90,12 @@ To set up PostgreSQL Docker Compose, follow these steps:
    ```bash
    yarn run prisma:migrate
    ```
-4. The PostgreSQL database will be available at `localhost:5432`.
+
+4. Run database seed (optional)
+   ```bash
+   npx tsx ./prisma/seed.ts
+   ```
+
+5. The PostgresSQL database will be available at `localhost:5432`.
 
 
